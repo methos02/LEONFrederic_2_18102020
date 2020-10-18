@@ -6,6 +6,42 @@
 
 body {
   font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+a, a:visited, a:focus {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 125px;
+  padding: 0 2%;
+}
+nav a {
+  display: inline-block;
+  width: 175px;
+  height: 122px;
+  line-height: 125px;
+  text-align: center;
+}
+nav .nav-logo {
+  flex: 1;
+}
+nav .nav-logo img {
+  width: 125px;
+}
+nav .nav-link .active {
+  color: #0065FC;
+  border-top: #0065FC solid 2px;
+}
+nav .register a {
+  font-weight: 700;
+  color: #0065FC;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -6,6 +6,14 @@
 
 body {
   font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+a, a:visited, a:focus {
+  text-decoration: none;
+  color: black;
 }
 
 @import "variables";
+
+@import "parts/nav";
