@@ -1,0 +1,29 @@
+nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 125px;
+  padding: 0 2%;
+
+  a {
+    display: inline-block;
+    width: 175px;
+    height: 122px;
+    line-height: 125px;
+    text-align: center;
+  }
+
+  .nav-logo { flex: 1; }
+  .nav-logo img { width: 125px; }
+
+  .nav-link .active {
+    color: $primary;
+    border-top: $primary solid 2px;
+  }
+
+  .register a {
+    font-weight: 700;
+    color: $primary;
+  }
+}
