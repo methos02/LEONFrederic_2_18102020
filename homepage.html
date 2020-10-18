@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Reservia</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+    <link href="libraries/css/fontawesome.min.css" rel="stylesheet">
     <link href="assets/css/app.css" type="text/css" rel="stylesheet">
     <!-- Meta tag facebook -->
     <meta property="og:title" content="Reservia"/>
@@ -31,5 +32,47 @@
             <a href="#">S'inscrire</a>
         </div>
     </nav>
+    <section class="search-barre">
+        <header>
+            <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+        </header>
+        <form name="search">
+            <div class="div-input">
+                <label for="city"><img class="logo-search" src="assets/svg/fontawesome/map-marker-alt.svg" alt="logo marqueur de carte"></label>
+                <input type="text" name="city" id="city" class="city" placeholder="Paris, France" />
+                <input type="submit" value="Rechercher" class="btn-search" />
+            </div>
+            <div class="div-select">
+                <h2>Filtres</h2>
+                <label>
+                    <input type="checkbox" name="filter['eco']">
+                    <span class="filter-badge"><i class="fas fa-money-bill-wave"></i></span>
+                    <span class="filter-label">Économique</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="filter['family']">
+                    <span class="filter-badge"><i class="fas fa-child"></i></span>
+                    <span class="filter-label">Familial</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="filter['romantic']">
+                    <span class="filter-badge"><i class="fas fa-heart"></i></span>
+                    <span class="filter-label">Romantique</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="filter['animal']">
+                    <span class="filter-badge"><i class="fas fa-dog"></i></span>
+                    <span class="filter-label">Animaux autorisés</span>
+                </label>
+            </div>
+            <div class="div-info">
+                <span class="badge-info"><i class="fas fa-info"></i></span>
+                <p>
+                    Plus de 500 logements sont disponibles dans cette ville
+                </p>
+            </div>
+        </form>
+    </section>
 </body>
 </html>

@@ -5,6 +5,7 @@
 }
 
 body {
+  padding: 2% 3%;
   font-family: "Raleway", sans-serif;
   font-weight: 300;
 }
@@ -14,18 +15,25 @@ a, a:visited, a:focus {
   color: black;
 }
 
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  letter-spacing: -1px;
+}
+
 nav {
   position: fixed;
+  top: 0;
+  left: 3%;
+  right: 3%;
   display: flex;
   align-items: center;
-  width: 100%;
   height: 125px;
-  padding: 0 2%;
 }
 nav a {
   display: inline-block;
   width: 175px;
-  height: 122px;
+  height: 123px;
   line-height: 125px;
   text-align: center;
 }
@@ -41,6 +49,123 @@ nav .nav-link .active {
 }
 nav .register a {
   font-weight: 700;
+  color: #0065FC;
+}
+
+.search-barre {
+  padding-top: 100px;
+}
+.search-barre header {
+  margin-bottom: 15px;
+}
+.search-barre form .div-input {
+  display: flex;
+}
+.search-barre form .div-input label {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #F2F2F2;
+  border-radius: 17px 0 0 17px;
+}
+.search-barre form .div-input label .logo-search {
+  width: 16px;
+}
+.search-barre form .div-input .city {
+  height: 50px;
+  width: 250px;
+  border-top: 1px solid #F2F2F2;
+  border-bottom: 1px solid #F2F2F2;
+  border-left: none;
+  border-right: none;
+  padding: 1px 15px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.search-barre form .div-input .btn-search {
+  width: 125px;
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  background-color: #0065FC;
+  border-radius: 0 17px 17px 0;
+  border: none;
+}
+.search-barre .div-select {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+.search-barre .div-select label {
+  display: flex;
+  position: relative;
+  margin-left: 50px;
+  cursor: pointer;
+}
+.search-barre .div-select .filter-badge {
+  position: absolute;
+  left: -18px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #F2F2F2;
+  text-align: center;
+  border-radius: 50%;
+  transition: transform 0.3s linear, background-color 0.3s linear;
+}
+.search-barre .div-select .filter-badge i {
+  width: 25px;
+  color: #ababab;
+  transition: color 0.3s linear;
+}
+.search-barre .div-select label:hover .filter-badge {
+  transform: scale(1.2);
+}
+.search-barre .div-select input:checked + .filter-badge {
+  background-color: #DEEBFF;
+}
+.search-barre .div-select input:checked + .filter-badge i {
+  color: #0065FC;
+}
+.search-barre .div-select input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.search-barre .div-select .filter-label {
+  border: 2px solid #F2F2F2;
+  display: inline-block;
+  height: 50px;
+  line-height: 44px;
+  padding: 0 20px 0 40px;
+  border-radius: 0 25px 25px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s linear, color 0.3s linear;
+}
+.search-barre .div-select label:hover .filter-label {
+  color: #0065FC;
+  background-color: #F2F2F2;
+}
+
+.div-info {
+  display: flex;
+  align-items: center;
+}
+.div-info .badge-info {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  margin-right: 15px;
+  border: 1px solid #F2F2F2;
+  border-radius: 15px;
+  text-align: center;
+}
+.div-info .badge-info i {
   color: #0065FC;
 }
 
