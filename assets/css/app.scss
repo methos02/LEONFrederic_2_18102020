@@ -4,8 +4,10 @@
   box-sizing: border-box;
 }
 
-@import "globals";
 @import "variables";
+@import "globals";
 
+@import "parts/hebergement";
+@import "parts/hebergements";
 @import "parts/nav";
 @import "parts/search_barre";
