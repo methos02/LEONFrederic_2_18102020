@@ -1,10 +1,12 @@
-.activities {
-  margin-bottom: 100vh;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 45px;
-  grid-template-rows: repeat(9, 65px);
-  grid-template-areas:
+.div-activities {
+  margin: 45px 0;
+
+  .activities {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 45px;
+    grid-template-rows: repeat(9, 60px);
+    grid-template-areas:
     "one two three four"
     "one two three four"
     "one two three four"
@@ -16,33 +18,34 @@
     "one six three five"
   ;
 
-  $names : (1: one, 2: two, 3: three, 4: four, 5: five, 6: six);
-  @each $numb, $name  in $names {
-    > :nth-child(#{$numb}) {
-      grid-area: #{$name};
+    $names : (1: one, 2: two, 3: three, 4: four, 5: five, 6: six);
+    @each $numb, $name  in $names {
+      > :nth-child(#{$numb}) {
+        grid-area: #{$name};
+      }
     }
-  }
 
-  .activity-card {
-    position: relative;
-    width: 100%;
-    border-radius: 25px;
-    box-shadow: 1px 1px 10px #838383;
-    background-size: cover;
-    background-position-x: center;
-    overflow: hidden;
+    .activity-card {
+      position: relative;
+      width: 100%;
+      border-radius: 25px;
+      box-shadow: 1px 1px 10px #838383;
+      background-size: cover;
+      background-position-x: center;
+      overflow: hidden;
 
-    h3 {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 25px 30px 25px 20px;
-      background-color: white;
+      h3 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 25px 30px 25px 20px;
+        background-color: white;
+      }
     }
-  }
 
-  :nth-child(2), :nth-child(6) {
-    background-position-y: center;
+    :nth-child(2), :nth-child(6) {
+      background-position-y: center;
+    }
   }
 }

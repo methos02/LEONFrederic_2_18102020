@@ -1,0 +1,9 @@
+footer {
+  display: flex;
+  background-color: $gray;
+
+  ul {
+    flex: 1;
+    list-style-type: none;
+  }
+}
