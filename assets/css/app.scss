@@ -7,8 +7,10 @@
 @import "variables";
 @import "globals";
 
-@import "parts/activites";
-@import "parts/hebergement";
-@import "parts/hebergements";
 @import "parts/nav";
-@import "parts/search_barre";
+@import "parts/hebergement";
+
+@import "pages/homepage/homepage";
+@import "pages/homepage/parts/activites";
+@import "pages/homepage/parts/hebergements";
+@import "pages/homepage/parts/search_barre";
