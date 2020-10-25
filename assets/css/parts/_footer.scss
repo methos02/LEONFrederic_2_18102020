@@ -1,0 +1,16 @@
+footer {
+  background-color: $gray;
+
+  .footer-container {
+    display: flex;
+    max-width: 1500px;
+    margin: auto;
+    padding: 40px 10px;
+  }
+
+  ul {
+    flex: 1;
+    list-style-type: none;
+    li {margin-bottom: 20px}
+  }
+}
