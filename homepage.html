@@ -25,8 +25,8 @@
 <nav>
     <div class="nav-logo"><img src="assets/images/logo.png" alt="logo du site"></div>
     <div class="nav-link">
-        <a class="active" href="#">Hébergements</a>
-        <a href="#">Activités</a>
+        <a class="active" href="#lodging">Hébergements</a>
+        <a href="#activities">Activités</a>
     </div>
     <div class="register">
         <a href="#">S'inscrire</a>
@@ -44,7 +44,7 @@
                 <input type="text" name="city" id="city" class="city" placeholder="Paris, France" />
                 <input type="submit" value="Rechercher" class="btn-search" />
             </div>
-            <div class="div-select">
+            <div class="div-select" id="lodging">
                 <h2>Filtres</h2>
                 <label>
                     <input type="checkbox" name="filter['eco']">
@@ -164,7 +164,7 @@
                     </div>
                 </div>
             </div>
-            <div class="see-more">
+            <div class="see-more"  id="activities">
                 <a href="#" class="title">Afficher plus</a>
             </div>
         </section>
@@ -216,26 +216,26 @@
             </div>
         </aside>
     </div>
-    <section id="div-activities" class="div-activities">
+    <section class="div-activities">
         <h1 class="title">Activités à Marseille</h1>
         <div class="activities">
             <div class="activity-card" style="background-image: url('assets/images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg')">
-                <h3>Hôtel Les soleil du matin</h3>
+                <h3>Vieux Port</h3>
             </div>
             <div class="activity-card" style="background-image: url('assets/images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg')">
-                <h3>Hôtel Les soleil du matin</h3>
+                <h3>Fort de Pomègues</h3>
             </div>
             <div class="activity-card" style="background-image: url('assets/images/activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg')">
-                <h3>Hôtel Les soleil du matin</h3>
+                <h3>Parc National des Calanques</h3>
             </div>
             <div class="activity-card" style="background-image: url('assets/images/activites/florian-wehde-xW9e8gdotxI-unsplash.jpg')">
-                <h3>Hôtel Les soleil du matin</h3>
+                <h3>Notre-Dame-de-la-Garde</h3>
             </div>
             <div class="activity-card" style="background-image: url('assets/images/activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg')">
-                <h3>Hôtel Les soleil du matin</h3>
+                <h3>Parc Longchamp</h3>
             </div>
             <div class="activity-card" style="background-image: url('assets/images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg')">
-                <h3>Hôtel Les soleil du matin</h3>
+                <h3>Îles du Frioul</h3>
             </div>
         </div>
     </section>
