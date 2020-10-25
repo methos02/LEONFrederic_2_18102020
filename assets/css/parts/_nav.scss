@@ -4,11 +4,17 @@ nav {
   left: 0;
   right: 0;
   z-index: 2;
-  padding: 0 3%;
   background-color: white;
-  display: flex;
-  align-items: center;
-  height: 125px;
+  max-width: 1500px;
+  margin: auto;
+  padding: 0 10px;
+
+  .nav-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 355px 125px;
+    grid-template-areas: "logo . link register";
+    align-items: center;
+  }
 
   a {
     display: inline-block;
@@ -18,15 +24,20 @@ nav {
     text-align: center;
   }
 
-  .nav-logo { flex: 1; }
+  .nav-logo {
+    grid-area: logo;
+    flex: 1;
+  }
   .nav-logo img { width: 125px; }
 
+  .nav-link {grid-area: link}
   .nav-link .active {
     color: $primary;
     border-top: $primary solid 2px;
   }
 
-  .register a {
+  .nav-register {grid-area: register}
+  .nav-register a {
     font-weight: 700;
     color: $primary;
   }
