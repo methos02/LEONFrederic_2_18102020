@@ -8,6 +8,12 @@ a, a:visited, a:focus {
   color: black;
 }
 
+.container {
+  max-width: 1500px;
+  margin: auto;
+  padding: 0 10px;
+}
+
 .title {
   font-size: 1.5rem;
   margin: 0 0 25px 0;

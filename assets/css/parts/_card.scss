@@ -1,0 +1,25 @@
+.card {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  padding: 5px;
+  border-radius: 25px;
+  box-shadow: 1px 1px 10px #cbcbcb;
+
+  .card-infos {
+    display: flex;
+    flex-direction: column;
+
+    h3 {margin: 0 0 5px 0; }
+    p {flex: 1}
+
+    .stars {
+      margin-top: 5px;
+      font-size: 0.8rem;
+
+      i { margin-right: -2px; }
+    }
+  }
+
+  img { object-fit: cover; }
+}
