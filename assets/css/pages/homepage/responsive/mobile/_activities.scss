@@ -1,0 +1,18 @@
+.div-activities {
+  margin: 45px 20px;
+
+  .activities {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      height: 220px;
+      margin: 15px 0;
+    }
+
+    a:nth-child(3) {order: 4;}
+    a:nth-child(4) {order: 5;}
+    a:nth-child(5) {order: 6;}
+    a:nth-child(6) {order: 3;}
+  }
+}

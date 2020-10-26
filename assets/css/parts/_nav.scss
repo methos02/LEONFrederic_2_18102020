@@ -23,9 +23,8 @@ nav {
 
   .nav-logo {
     grid-area: logo;
-    flex: 1;
+    img { width: 125px; }
   }
-  .nav-logo img { width: 125px; }
 
   .nav-link {grid-area: link}
   .nav-link .active {

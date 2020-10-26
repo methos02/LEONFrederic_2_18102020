@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+  .div-homepage {
+    margin: 180px auto auto;
+    padding: 0;
+  }
+
+  @import "responsive/mobile/activities";
+  @import "responsive/mobile/hebergements";
+  @import "responsive/mobile/search_barre";
+}

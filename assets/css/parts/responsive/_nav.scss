@@ -1,0 +1,42 @@
+nav {
+  position: absolute;
+
+  @media screen and (max-width: 768px) {
+    .container { padding: 0; }
+
+    .nav-content {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: repeat(2, 75px);
+      grid-template-areas:
+        "logo register"
+        "link link"
+      ;
+    }
+
+    .nav-logo {margin-left: 10px;}
+
+    .nav-link {
+      display: flex;
+
+      a {
+        flex: 1;
+        height: 75px;
+        line-height: 75px;
+        border-bottom: $gray solid 2px;
+      }
+
+      .active {
+        border-top: none;
+        border-bottom: $primary solid 2px;
+      }
+    }
+
+    .nav-register {
+      text-align: right;
+      a {
+        text-align: right;
+        margin-right: 10px;
+      }
+    }
+  }
+}

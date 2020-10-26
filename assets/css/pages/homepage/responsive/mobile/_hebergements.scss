@@ -1,0 +1,32 @@
+.div-hebergements {
+  grid-template-columns: 100%;
+
+  section, aside {
+    border-radius: 0;
+    padding: 0 20px;
+  }
+
+  aside {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    padding-bottom: 45px;
+
+    h2 { margin: 40px 0 25px 0;}
+  }
+
+  section {
+    background-color: white;
+
+    .title { margin: 40px 0 25px 0;}
+
+    .hebergements {
+      grid-template-columns: 100%;
+      grid-row-gap: 20px;
+    }
+
+    .see-more .title {
+      font-size: 1.3rem;
+      margin: 35px 0 15px 0;
+    }
+  }
+}

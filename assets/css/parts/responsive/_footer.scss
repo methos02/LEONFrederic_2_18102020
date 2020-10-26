@@ -1,0 +1,8 @@
+footer {
+  @media screen and (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      padding: 40px 20px;
+    }
+  }
+}

@@ -12,6 +12,11 @@
 @import "parts/footer";
 
 @import "pages/homepage/homepage";
-@import "pages/homepage/parts/activites";
+@import "pages/homepage/parts/activities";
 @import "pages/homepage/parts/hebergements";
 @import "pages/homepage/parts/search_barre";
+
+@import "parts/responsive/nav";
+@import "parts/responsive/footer";
+
+@import "pages/homepage/homepage_responsive";
