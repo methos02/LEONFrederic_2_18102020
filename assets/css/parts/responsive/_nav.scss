@@ -1,6 +1,4 @@
 nav {
-  position: absolute;
-
   @media screen and (max-width: 768px) {
     .container { padding: 0; }
 
@@ -10,7 +8,7 @@ nav {
       grid-template-areas:
         "logo register"
         "link link"
-      ;
+    ;
     }
 
     .nav-logo {margin-left: 10px;}

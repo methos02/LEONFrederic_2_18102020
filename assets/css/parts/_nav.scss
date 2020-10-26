@@ -1,16 +1,10 @@
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  background-color: white;
-
   .nav-content {
     display: grid;
     grid-template-columns: 1fr 1fr 355px 125px;
     grid-template-areas: "logo . link register";
     align-items: center;
+    height: 125px;
   }
 
   a {
@@ -19,20 +13,32 @@ nav {
     height: 123px;
     line-height: 125px;
     text-align: center;
+    border-top: #ffffff solid 2px;
+    transition: font-size linear 0.3s;
   }
+
+  a:hover { font-size: 1.2rem}
 
   .nav-logo {
     grid-area: logo;
     img { width: 125px; }
   }
 
-  .nav-link {grid-area: link}
+  .nav-link {
+    grid-area: link;
+    display: flex;
+  }
+
   .nav-link .active {
     color: $primary;
     border-top: $primary solid 2px;
   }
 
-  .nav-register {grid-area: register}
+  .nav-register {
+    grid-area: register;
+    display: flex;
+  }
+
   .nav-register a {
     font-weight: 700;
     color: $primary;

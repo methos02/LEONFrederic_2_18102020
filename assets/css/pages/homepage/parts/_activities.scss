@@ -27,8 +27,7 @@
 
     .activity-card {
       position: relative;
-      background-size: cover;
-      background-position-x: center;
+      padding: 0;
       overflow: hidden;
 
       h3 {
@@ -39,10 +38,8 @@
         padding: 25px 30px 25px 20px;
         background-color: white;
       }
-    }
 
-    :nth-child(2), :nth-child(6) {
-      background-position-y: center;
+      img { width: 100%; }
     }
   }
 }

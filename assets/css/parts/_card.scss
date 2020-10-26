@@ -5,6 +5,7 @@
   padding: 5px;
   border-radius: 25px;
   box-shadow: 1px 1px 10px #cbcbcb;
+  transition: transform linear 0.3s;
 
   .card-infos {
     display: flex;
@@ -23,3 +24,5 @@
 
   img { object-fit: cover; }
 }
+
+.card:hover { transform: scale(1.03)}
