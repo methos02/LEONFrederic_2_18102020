@@ -1,0 +1,26 @@
+.div-hebergements {
+  grid-column-gap: 15px;
+
+  aside, section { padding: 20px; }
+
+  .hebergements {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+
+  .hebergements-aside {
+    grid-row-gap: 15px;
+  }
+
+  .card {
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      border-radius: 25px 25px 0 0;
+    }
+
+    .card-infos { padding: 10px}
+  }
+}

@@ -1,0 +1,28 @@
+.div-activities {
+  .activities {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-template-rows: repeat(17, 50px);
+    grid-row-gap: 20px;
+    grid-template-areas:
+      "one two"
+      "one two"
+      "one two"
+      "one two"
+      "one two"
+      "one six"
+      "one six"
+      "one six"
+      "one six"
+      "four three"
+      "four three"
+      "four three"
+      "four three"
+      "five three"
+      "five three"
+      "five three"
+      "five three"
+    ;
+  }
+}

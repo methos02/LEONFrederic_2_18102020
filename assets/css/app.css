@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -40,7 +41,6 @@ nav .nav-content {
   grid-template-columns: 1fr 1fr 355px 125px;
   grid-template-areas: "logo . link register";
   align-items: center;
-  height: 125px;
 }
 nav a {
   display: inline-block;
@@ -184,21 +184,27 @@ footer ul li {
   margin: 30px 0;
 }
 .div-hebergements section, .div-hebergements aside {
-  padding: 45px;
   background-color: #F2F2F2;
   border-radius: 25px;
 }
 .div-hebergements section {
+  padding: 45px 4% 0;
   display: flex;
   flex-direction: column;
 }
+.div-hebergements aside {
+  padding: 45px 7%;
+}
 .div-hebergements aside h2 {
-  position: relative;
+  display: flex;
+  align-items: center;
+}
+.div-hebergements aside h2 span {
+  flex: 1;
 }
 .div-hebergements aside h2 i {
-  position: absolute;
+  margin-left: 5px;
   font-size: 1.8rem;
-  right: 0;
 }
 .div-hebergements .hebergements {
   display: grid;
@@ -211,7 +217,7 @@ footer ul li {
 }
 .div-hebergements .hebergements img {
   width: 100%;
-  height: 130px;
+  height: 120px;
   border-radius: 25px 25px 0 0;
 }
 .div-hebergements .hebergements .card-infos {
@@ -221,6 +227,9 @@ footer ul li {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-row-gap: 40px;
+}
+.div-hebergements .hebergements-aside card {
+  position: relative;
 }
 .div-hebergements .hebergements-aside img {
   width: 35%;
@@ -233,7 +242,7 @@ footer ul li {
 .div-hebergements .see-more {
   display: flex;
   flex: 1;
-  align-items: flex-end;
+  align-items: center;
 }
 .div-hebergements .see-more a {
   margin: 0;
@@ -290,16 +299,17 @@ footer ul li {
 }
 .search-barre .div-filters {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin: 30px 0;
 }
 .search-barre .div-filters .filters {
   display: flex;
+  flex-wrap: wrap;
 }
 .search-barre .div-filters .filters label {
   display: flex;
   position: relative;
-  margin-left: 50px;
+  margin: 0 0 10px 50px;
   cursor: pointer;
 }
 .search-barre .div-filters .filters .filter-badge {
@@ -363,7 +373,7 @@ footer ul li {
   color: #0065FC;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   nav .container {
     padding: 0;
   }
@@ -397,16 +407,16 @@ footer ul li {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   footer .footer-container {
     flex-direction: column;
     padding: 40px 20px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .div-homepage {
-    margin: 180px auto auto;
+    margin: 20px auto auto;
     padding: 0;
   }
 
@@ -473,9 +483,6 @@ footer ul li {
   .search-barre header h1 {
     margin-bottom: 15px;
   }
-  .search-barre form .div-input {
-    justify-content: center;
-  }
   .search-barre form .div-input .city {
     width: 225px;
   }
@@ -510,6 +517,50 @@ footer ul li {
   }
   .search-barre form .div-info p {
     width: 300px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .div-homepage {
+    padding: 0 20px;
+  }
+
+  .div-activities .activities {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-template-rows: repeat(17, 50px);
+    grid-row-gap: 20px;
+    grid-template-areas: "one two" "one two" "one two" "one two" "one two" "one six" "one six" "one six" "one six" "four three" "four three" "four three" "four three" "five three" "five three" "five three" "five three";
+  }
+
+  .div-hebergements {
+    grid-column-gap: 15px;
+  }
+  .div-hebergements aside, .div-hebergements section {
+    padding: 20px;
+  }
+  .div-hebergements .hebergements {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+  }
+  .div-hebergements .hebergements-aside {
+    grid-row-gap: 15px;
+  }
+  .div-hebergements .card {
+    flex-direction: column;
+  }
+  .div-hebergements .card img {
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+  }
+  .div-hebergements .card .card-infos {
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1110px) {
+  .div-hebergements .hebergements-aside img {
+    height: 170px;
   }
 }
 

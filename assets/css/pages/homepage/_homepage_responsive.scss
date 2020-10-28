@@ -1,10 +1,28 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .div-homepage {
-    margin: 180px auto auto;
+    margin: 20px auto auto;
     padding: 0;
   }
 
   @import "responsive/mobile/activities";
   @import "responsive/mobile/hebergements";
   @import "responsive/mobile/search_barre";
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .div-homepage {
+    padding: 0 20px;
+  }
+  @import "responsive/tablette/activities";
+  @import "responsive/tablette/hebergements";
+}
+
+@media screen and (min-width: 992px) and (max-width: 1110px) {
+  .div-hebergements {
+    .hebergements-aside {
+      img {
+        height: 170px;
+      }
+    }
+  }
 }
