@@ -125,6 +125,12 @@ footer ul {
 footer ul li {
   margin-bottom: 20px;
 }
+footer a {
+  transition: color linear 0.3s;
+}
+footer a:hover {
+  color: #0065FC;
+}
 
 .div-homepage {
   max-width: 1500px;
@@ -281,21 +287,22 @@ footer ul li {
   font-size: 1.2rem;
 }
 .search-barre form .div-input .btn-search {
-  width: 125px;
+  width: 121px;
   font-size: 1.2rem;
   color: white;
   text-align: center;
   background-color: #0065FC;
+  border: 2px solid #0065FC;
   border-radius: 0 17px 17px 0;
-  border: none;
   cursor: pointer;
-  transition: color linear 0.3s;
+  transition: color linear 0.3s, background-color linear 0.3s;
 }
 .search-barre form .div-input .btn-search i {
   display: none;
 }
 .search-barre form .div-input .btn-search:hover {
-  color: #DEEBFF;
+  background-color: white;
+  color: #0065FC;
 }
 .search-barre .div-filters {
   display: flex;
@@ -411,6 +418,11 @@ footer ul li {
   footer .footer-container {
     flex-direction: column;
     padding: 40px 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  footer ul {
+    margin-left: 25px;
   }
 }
 

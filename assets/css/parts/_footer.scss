@@ -11,4 +11,7 @@ footer {
     list-style-type: none;
     li {margin-bottom: 20px}
   }
+
+  a {transition: color linear 0.3s;}
+  a:hover { color: $primary; }
 }
